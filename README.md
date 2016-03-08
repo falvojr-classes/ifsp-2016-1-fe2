@@ -1,4 +1,4 @@
-# Ferramentas de Desenvolvimento de Aplicativos 2 (FE2)
+# Ferramentas de Desenvolvimento de Aplicativos 2
 
 Repositório com os exercícios realizados em aula, além do plano de ensino da disciplina FE2. Essa página disponibiliza o código-fonte das atividades e todos os links para os slides apresentados, através dos quais os alunos podem interagir através de comentários.
 
