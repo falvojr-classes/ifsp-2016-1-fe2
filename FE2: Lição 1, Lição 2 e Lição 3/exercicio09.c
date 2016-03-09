@@ -14,7 +14,7 @@ int main( )
 
     temperaturaCelsius = (sensorTM35 * (CINCO_VOLTS/FATOR_CINCO_VOLTS)) / UM_GRAU_C_EM_VOLTS;
     
-    printf("Temperatura em C: %.2f", temperaturaCelsius);
+    printf("Temperatura em Celsius: %.2f", temperaturaCelsius);
     
     getchar();
     return 0;
