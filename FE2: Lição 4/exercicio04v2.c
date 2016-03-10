@@ -23,7 +23,7 @@ int main( )
 	} else {
 		printf("O caractere digitado nao eh uma vogal.");
 	}
-    
+
     getchar();
     return 0;
 }
