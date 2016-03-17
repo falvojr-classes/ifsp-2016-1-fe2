@@ -17,3 +17,7 @@ No final do semestre o aluno será capaz de criar algoritmos ou usar algoritmos 
 7. Matrizes e Vetores
 8. Funções
 9. Ponteiros
+
+## Trabalhos
+
+1. Trabalho Preparatório para A1 (em breve)
