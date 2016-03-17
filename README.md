@@ -20,4 +20,4 @@ No final do semestre o aluno será capaz de criar algoritmos ou usar algoritmos 
 
 ## Trabalhos
 
-1. Trabalho Preparatório para A1 (em breve)
+1. [Trabalho Preparatório para A1](https://docs.google.com/presentation/d/169wdGcY-7-Hb8IFZ7s4TXAhurzC_2pRXmed4yhtqQaY/edit?usp=sharing)
