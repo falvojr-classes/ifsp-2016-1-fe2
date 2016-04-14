@@ -13,7 +13,7 @@
 
 int main()
 {
-    int dia, mes, ano, diaMaximo = 0;
+    int dia, mes, ano, diaMaximo = 99;
 
     printf("\nDigite o Dia, Mes e Ano:");
     scanf("%i %i %i", &dia, &mes, &ano);
@@ -41,7 +41,7 @@ int main()
         }
     }
 
-    if(diaMaximo && dia >= 1 && dia <= diaMaximo)
+    if(diaMaximo != 99 && dia >= 1 && dia <= diaMaximo)
     {
         printf("Data Valida!");
     }

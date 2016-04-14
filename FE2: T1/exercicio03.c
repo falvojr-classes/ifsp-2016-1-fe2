@@ -20,7 +20,7 @@ int main()
 
     switch(opcao)
     {
-    case 1 ... 2:
+    case 1: case 2:
         ehCrescente = opcao == 1;
         if ((!ehCrescente && a > b && a > c) || (ehCrescente && a < b && a < c))
         {
