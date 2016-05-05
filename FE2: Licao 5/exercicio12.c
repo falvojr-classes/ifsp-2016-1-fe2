@@ -1,3 +1,10 @@
+/**
+ * 12. Fazer um programa em linguagem C para gerar e escrever os 4
+ * primeiros números perfeitos. Um número perfeito é aquele que é
+ * igual a soma dos seus divisores, menos ele mesmo.
+ * (Ex.: 6 = l + 2 + 3; 28 = 1 + 2 + 4 + 7 + 14; etc).
+**/
+
 #include<stdio.h>
 
 #define PERFEITOS 5
