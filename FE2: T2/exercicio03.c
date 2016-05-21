@@ -1,5 +1,5 @@
 /**
- * Elaborar um código que efetue a leitura sucessiva de valores numéricos e apresente no
+ * 3. Elaborar um código que efetue a leitura sucessiva de valores numéricos e apresente no
  * final o total do somatório, a média e o total de valores lidos. O programa deve fazer as
  * leituras dos valores enquanto o usuário estiver fornecendo valores positivos. Calcular
  * também:
@@ -22,38 +22,36 @@ int main(){
     menor = 0;
     maior = 0;
 
-	while(1)
+	while(numero >= 0)
 	{
 		printf("Digite um numero:");
 		scanf("%f", &numero);
 
-		if(numero < 0)
+		if(numero >= 0)
 		{
-			break;
-		}
+            contador++;
+            soma += numero;
 
-		contador++;
-		soma += numero;
+            if(numero < 50)
+            {
+                menores50++;
+            }
 
-		if(numero < 50)
-		{
-			menores50++;
-		}
+            if(numero > maior)
+            {
+                maior = numero;
+            }
 
-		if(numero > maior)
-		{
-			maior = numero;
-		}
-
-		if(menor == 0 || numero < menor)
-		{
-			menor = numero;
+            if(menor == 0 || numero < menor)
+            {
+                menor = numero;
+            }
 		}
 	}
 
 	printf("\nSomatorio: %.2f", soma);
 	printf("\nMedia: %.2f", soma/contador);
-	printf("\Total de valores lidos: %.0f", contador);
+	printf("\nTotal de valores lidos: %.0f", contador);
 	printf("\nItem A: %.0f", menores50);
 	printf("\nItem B: %.2f", menores50/contador*100);
 	printf("\nItem C: %.2f", maior);

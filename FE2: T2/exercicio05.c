@@ -28,7 +28,7 @@ int main()
         soma += dividendo/divisor;
         dividendo--;
     }
-    printf("Soma: %.2f\n", soma);
+    printf("Soma: %.8f\n", soma);
 
     if (soma > 269.10 && soma < 269.11)
     {
