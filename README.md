@@ -13,7 +13,7 @@ No final do semestre o aluno será capaz de criar algoritmos ou usar algoritmos 
 3. [Operadores Aritméticos, Relacionais e Lógicos](https://docs.google.com/presentation/d/1C2NtuiuG_hXStVG7XuECYkbfddbQWogeAciVZBJCX2M/edit?usp=sharing)
 4. [Estruturas de Decisão](https://docs.google.com/presentation/d/1BbbgfM2i9T52pqFgZRwQi3d0rnMsTeSjNZLIUbuuxmA/edit?usp=sharing)
 5. [Estruturas de Repetição](https://docs.google.com/presentation/d/1KUv39yY3VJlpjJy8hAEA7Q7jMRhgp8P2abz082dA5aA/edit?usp=sharing)
-6. Matrizes e Vetores
+6. [Matrizes e Vetores](https://docs.google.com/presentation/d/1GpGLGX5SwyrJSgWLax8zTr6S7cJyZ7Rh9j5IFu0Xz6w/edit?usp=sharing)
 7. Funções e Ponteiros
 
 ## Trabalhos
