@@ -20,3 +20,4 @@ No final do semestre o aluno será capaz de criar algoritmos ou usar algoritmos 
 
 1. [T1: Trabalho Preparatório para A1](https://docs.google.com/presentation/d/169wdGcY-7-Hb8IFZ7s4TXAhurzC_2pRXmed4yhtqQaY/edit?usp=sharing)
 2. [T2: Trabalho Preparatório para A2](https://docs.google.com/presentation/d/1jAr9YkNXs6oT3w_6jfDi1de_x7cjQ3TeJNoZTobEqmI/edit?usp=sharing)
+3. [T3: Trabalho Preparatório para A3](https://docs.google.com/presentation/d/1_7IaeevmwxGpIgQLOF5nCBYmantwwM9RomdULpxVMx0/edit?usp=sharing)
