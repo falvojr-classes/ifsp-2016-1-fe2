@@ -1,5 +1,10 @@
 /**
- * 6.
+ * 6. Crie um programa que gere a mesma saída do exercício anterior, mas agora considerando a seguinte matriz:
+ *
+ * {
+ *   { 'I', 'S', '2', '1' },
+ *   { 'F', 'P', '0', '6' }
+ * }
  */
 
 #include<stdio.h>
