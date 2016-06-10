@@ -9,30 +9,35 @@
 
 #include<stdio.h>
 
+int calcularIndice(int indice)
+{
+    int indiceCalculado = indice;
+    if(indice < FATOR_TROCA)
+    {
+        indiceCalculado += FATOR_TROCA;
+    }
+    else
+    {
+        indiceCalculado -= FATOR_TROCA;
+    }
+    return indiceCalculado;
+}
+
 int main()
 {
-    int i, vetorA[CAPACIDADE], vetorB[CAPACIDADE], contador;
+    int i, vetorA[CAPACIDADE], vetorB[CAPACIDADE];
 
     for(i = 0; i < CAPACIDADE; i++)
     {
         printf("vetorA[%d] = ", i);
         scanf("%d", &vetorA[i]);
-        if (i < FATOR_TROCA)
-        {
-            vetorB[i+FATOR_TROCA] = vetorA[i];
-        }
-        else
-        {
-            vetorB[i-FATOR_TROCA] = vetorA[i];
-        }
+        vetorB[calcularIndice()] = vetorA[i];
     }
 
-    printf("\nvetorB:");
     for(i = 0; i < CAPACIDADE; i++)
     {
-        printf("  %d", vetorB[i]);
+        printf("%d  ", vetorB[i]);
     }
-    printf("\n");
 
     getchar();
     return 0;
