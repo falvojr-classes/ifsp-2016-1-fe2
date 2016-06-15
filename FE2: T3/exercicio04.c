@@ -15,9 +15,9 @@ int main()
         {1, 2, 3}
     };
     int matrizB[ORDEM][ORDEM] = {
-        {1, 1, 1},
-        {2, 2, 2},
-        {3, 3, 3}
+        {1, 0, 0},
+        {0, 1, 0},
+        {0, 0, 1}
     };
     int matrizFinal[ORDEM][ORDEM];
     int i,j,k;

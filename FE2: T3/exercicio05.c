@@ -38,7 +38,7 @@ int main()
                 qtdA++;
             }
         }
-        if (contA > 3)
+        if (qtdA > 3)
         {
             printf("DNA%d\n", i + 1);
         }

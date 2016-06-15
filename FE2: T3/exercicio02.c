@@ -32,9 +32,9 @@ int main()
     scanf("%d", &x);
 
     // Busca a posição de X na matriz enquanto ele ainda nao tiver sido encontrado:
-    for(i = 0; i < DIMENSAO && !encontrei; i++)
+    for(i = 0; i < DIMENSAO && encontrei == 0; i++)
     {
-        for(j = 0; j < DIMENSAO && !encontrei; j++)
+        for(j = 0; j < DIMENSAO && encontrei == 0; j++)
         {
             int valor = matriz[i][j];
             if (valor == x)
@@ -46,7 +46,7 @@ int main()
     }
 
     // Verifica se X nao foi encontrado, equivalente a "encontrei == 1"
-    if (!encontrei)
+    if (encontrei == 0)
     {
         printf("\nX nao foi encontrado!\n");
     }

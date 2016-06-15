@@ -55,6 +55,10 @@ int main()
         printf("%d  ", b[i]);
     }
 
+    //imprimirVetor(v, DIMENSAO, 'V');
+    //imprimirVetor(a, qtdA, 'A');
+    //imprimirVetor(b, qtdB, 'B');
+
     printf("\nQuantidade Nulos: %d\n" , qtdNulos);
 
     getchar();

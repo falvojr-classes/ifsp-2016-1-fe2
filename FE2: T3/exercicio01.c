@@ -4,7 +4,7 @@
  * valor de X no vetor lido e informar a posição em que foi encontrado.
 **/
 
-#define DIMENSAO 20
+#define DIMENSAO 5
 
 #include <stdio.h>
 
@@ -28,7 +28,7 @@ int main()
     scanf("%s", &x);
 
     // Busca a posição de X no vetor enquanto ele ainda nao tiver sido encontrado:
-    for (i = 0; i < DIMENSAO && !encontrei ; i++)
+    for (i = 0; i < DIMENSAO && encontrei == 0 ; i++)
     {
         char valor = vetor[i];
         if (valor == x)
@@ -39,7 +39,7 @@ int main()
     }
 
     // Verifica se X nao foi encontrado, equivalente a "encontrei == 1"
-    if (!encontrei)
+    if (encontrei == 0)
     {
         printf("\nX nao foi encontrado!\n");
     }
