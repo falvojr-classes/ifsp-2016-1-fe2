@@ -1,41 +1,38 @@
-/**
- * 6. Para sabermos quanto vamos pagar pela conta de energia elÃ©trica, multiplicamos a
- * potÃªncia do eletrodomÃ©stico (watts) pelo nÃºmero mÃ©dio de horas que o mesmo
- * permanece ligado por dia. Sabendo-se que o quilowatt-hora (kwh) custa R$ 0,39, faÃ§a um
- * programa em linguagem C que receba a potÃªncia do eletrodomÃ©stico (watts), o tempo
- * que ele fica ligado por dia (horas), calcule e mostre:
- * a. Quantos kwh o eletrodomÃ©stico gasta num mÃªs;
- * b. O valor, em reais, a ser pago num mÃªs com desconto de 15%;
- * c. Quantos kwh o eletrodomÃ©stico gasta num ano.
-**/
+/*6- Para sabermos quanto vamos pagar pela conta de energia elétrica, 
+multiplicamos a potência do eletrodoméstico (watts) pelo número médio de 
+horas que o mesmo permanece ligado por dia. Sabendo-se que o quilowatt-hora (kwh)
+custa R$ 0.39, faça um programa em linguagem C que receba a potência do 
+eletrodoméstico (watts),o tempo que ele fica ligado por dia (horas), calcule e mostre: 
+a. Quantos kwh o eletrodoméstico gasta num mês; 
+b. O valor, em reais, a ser pago num mês com desconto de 15%; 
+c. Quantos kwh o eletrodoméstico gasta num ano. */
 
-#include <stdio.h> // Biblioteca dos comandos de E/S (I/O)
+#include <stdio.h>
 
-#define CONVERSAO_KW 1000
-#define DIAS_MES 30
-#define DIAS_ANO 365
-#define VALOR_KWH 0.39
-#define FATOR_DESCONTO 0.85
-
-int main( )
+int main()
 {
-    float potenciaW, potenciaKW, qtdHorasDia, kwhMes, valorMes, kwhAno;
+	float potenciaW, potenciaKw, qtdHorasDia, kwhMes, kwhAno, valorAPagar;	
+	
+	printf("Informe a potencia do eletrodomestico: ");
+	scanf("%f",&potenciaW);
+	printf("Informe o tempo que ele fica ligado por dia:");
+	scanf("%f", &qtdHorasDia);
+	
+	potenciaKw = potenciaW / 1000;
+	kwhMes = potenciaKw * qtdHorasDia * 30;
+	valorAPagar = kwhMes * 0.39;
+	
+	// valorAPagar = valorAPagar - (valorAPagar * (15/100.0)); [desconto de 15%] OU
+	// valorAPagar = valorAPagar * (85/100.0); [desconto de 15%, considerando 85% do valor a pagar] OU
+	valorAPagar = valorAPagar * 0.85;
+	
+	// kwhAno = potenciaKW * qtdHorasDia * 365; [dias do ano] OU
+	kwhAno = kwhMes * 12;
 
-    printf("Potencia do eletrodomestico (em watts):");
-    scanf ("%f", &potenciaW);
-
-    printf("Horas ligado por dia:");
-    scanf ("%f", &qtdHorasDia);
-
-    potenciaKW = potenciaW / CONVERSAO_KW;
-    kwhMes = potenciaKW * qtdHorasDia * DIAS_MES;
-    valorMes = kwhMes * VALOR_KWH * FATOR_DESCONTO;
-    kwhAno = potenciaKW * qtdHorasDia * DIAS_ANO;
-
-    printf("\nKWH Mes: %.2f", kwhMes);
-    printf("\nValor Mes (com 15 porcento de desconto): %.2f", valorMes);
-    printf("\nKWH Ano: %.2f", kwhAno);
-
-    getchar();
-    return 0;
+	printf("Gasto KWH no mes: %.2f \n",kwhMes);
+	printf("Valor a ser pago com desconto: %.2f \n",valorAPagar);
+	printf("Gasto KWH num ano: %.2f \n",kwhAno);
+	
+	getchar ();
+	return 0;
 }
