@@ -7,6 +7,8 @@
 
 #include<stdio.h>
 
+#define ZERO 0
+
 int main()
 {
     int operacao;
@@ -37,7 +39,7 @@ int main()
         printf("Resultado: %.2f - %.2f = %.2f\n", a, b, resultado);
         break;
     case 4:
-        if (b != 0) {
+        if (b != ZERO) {
             resultado = a / b;
             printf("Resultado: %.2f / %.2f = %.2f\n", a, b, resultado);  
         } else {
@@ -53,3 +55,4 @@ int main()
     getchar();
     return 0;
 }
+
