@@ -19,7 +19,7 @@ int main()
     printf("\nd) X=%d e Y=%d", x, y);
     y=x; x=y;
     printf("\ne) X=%d e Y=%d", x, y);
-    y+=--x;
+    y+=x++;
     printf("\nf) X=%d e Y=%d", x, y);
     y-=++x;
     printf("\ng) X=%d e Y=%d", x, y);
@@ -27,4 +27,3 @@ int main()
     getchar();
     return 0;
 }
-
