@@ -9,14 +9,14 @@
 
 int main()
 {
-    int a, b, operacao;
-    float resultado;
+    int operacao;
+    float a, b, resultado;
 
     printf("Valor A:");
-    scanf("%i", &a);
+    scanf("%f", &a);
 
     printf("Valor B:");
-    scanf("%i", &b);
+    scanf("%f", &b);
 
     printf("\nEscolha uma das operacoes abaixo:\n1–Multiplicar\n2–Somar\n3–Subtrair\n4–Dividir\n\n");
     printf("Operacao:");
@@ -26,19 +26,24 @@ int main()
     {
     case 1:
         resultado = a * b;
-        printf("Resultado: %d * %d = %.2f\n", a, b, resultado);
+        printf("Resultado: %.2f * %.2f = %.2f\n", a, b, resultado);
         break;
     case 2:
         resultado = a + b;
-        printf("Resultado: %d + %d = %.2f\n", a, b, resultado);
+        printf("Resultado: %.2f + %.2f = %.2f\n", a, b, resultado);
         break;
     case 3:
         resultado = a - b;
-        printf("Resultado: %d - %d = %.2f\n", a, b, resultado);
+        printf("Resultado: %.2f - %.2f = %.2f\n", a, b, resultado);
         break;
     case 4:
-        resultado = a / b;
-        printf("Resultado: %d / %d = %.2f\n", a, b, resultado);
+        if (b != 0) {
+            resultado = a / b;
+            printf("Resultado: %.2f / %.2f = %.2f\n", a, b, resultado);  
+        } else {
+            printf("Divisão invalida!\n");
+        }
+        
         break;
     default:
         printf("Operacao invalida!\n");
@@ -48,4 +53,3 @@ int main()
     getchar();
     return 0;
 }
-
