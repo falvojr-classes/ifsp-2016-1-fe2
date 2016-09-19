@@ -1,10 +1,10 @@
 /**
- * Fazer um programa que receba Dia, Mês, Ano e verifique se a data formada por esse
- * conjunto de informações é válida. Para isso, considere as seguintes regras:
+ * Fazer um programa que receba Dia, MÃªs, Ano e verifique se a data formada por esse
+ * conjunto de informaÃ§Ãµes Ã© vÃ¡lida. Para isso, considere as seguintes regras:
  *
- *   Dia - Valor entre 1 e 31. Além disso, considerar a quantidade de dias específica de cada mês.
- *   Mês - Valor entre 1 e 12.
- *   Ano - Valor maior que 1970. Além disso, considerar anos bissextos na verificação do mês de Fevereiro.
+ *   Dia - Valor entre 1 e 31. AlÃ©m disso, considerar a quantidade de dias especÃ­fica de cada mÃªs.
+ *   MÃªs - Valor entre 1 e 12.
+ *   Ano - Valor maior que 1970. AlÃ©m disso, considerar anos bissextos na verificaÃ§Ã£o do mÃªs de Fevereiro.
 */
 
 #define ANO_MINIMO 1970
