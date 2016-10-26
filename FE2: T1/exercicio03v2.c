@@ -3,7 +3,7 @@
 int main() {
 	int opcao, a, b, c;
 
-	printf("Digite a opÃ§Ã£o desejada: ");
+	printf("Digite a opção desejada: ");
 	scanf("%d", &opcao);
 
 	printf("Digite os valores de A, B e C: ");
